@@ -1,0 +1,46 @@
+
+
+
+.thumbs-wrapper, .carousel-status{
+    display: none;
+}
+
+.thumbnail{
+    width: 60%;
+    padding-left: 150px;
+    p{
+        display: -webkit-box;
+        /* max-width: 200px; */
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
+.thumb-container{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    top: 30%;
+    text-align: left;
+    padding: 0 300px 0 100px;
+    color: white;
+    z-index: 1;
+    h1{
+        font-size: 80px;
+        font-weight: bold;
+    }
+}
+
+.overlay{
+    position: absolute; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.6); /* Black background with opacity */
+    cursor: pointer; /* Add a pointer on hover */
+}
